@@ -1,1 +1,1 @@
-Some practice to brush up on Python skills, so I can work on my more advanced repos'; it's also a collaboration effort with my dear friend Tanja from Moscow, Russia..
+Practice to brush up on my Python skills, so I can work on more advanced repos'; it's also a collaboration effort with my dear friend Tanja from Rublyovka..
