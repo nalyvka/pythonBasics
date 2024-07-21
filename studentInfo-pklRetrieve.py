@@ -1,4 +1,6 @@
 import pickle
+
+#retrieve data from studentFile
 with open('studentFile.pkl', 'rb') as read:
     numStudents = pickle.load(read)
     names = pickle.load(read)
@@ -13,3 +15,4 @@ while (0==0):
         if (names[i]==namePrompt):
             print(namePrompt, "'s ID is ", idValues[i], '.')
             print(namePrompt, "'s age is ", age[i], '.')
+            print(namePrompt, "'s GPA is ", gpa[i], '.')
