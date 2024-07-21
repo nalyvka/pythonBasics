@@ -2,4 +2,4 @@ Practice to brush up on my Python skills, so I can work on more advanced repos';
 
 Will continue up to, and including, simple threading files and applications🧵
 
-May eventually turn this into a tutorial for other people to use, with my solutions in a folder
+Will eventually turn this into a tutorial for other people to use, with my solutions in a folder
