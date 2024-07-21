@@ -23,5 +23,6 @@ for i in range(0,numStudents, 1):
 with open('studentFile.pkl', 'wb') as dat:
     pickle.dump(numStudents, dat)
     pickle.dump(names, dat)
+    pickle.dump(idValues, dat)
     pickle.dump(age, dat)
     pickle.dump(gpa, dat)
