@@ -4,6 +4,7 @@ lowVal = 100
 highVal = 0
 swapper = 0
 numGrades = int(input('Please Enter The # of Grades: '))
+avg = bucket / numGrades
 
 #user generated array: prompts user to insert grades and appends them to an array
 for i in range(0, numGrades, 1):
@@ -13,7 +14,7 @@ for i in range(0, numGrades, 1):
 #finds the average of the grades
 for i in range(0, numGrades, 1):
     bucket = bucket + grades[i]
-avg = bucket / numGrades
+
 
 #finds the smallest and highest grades in the array
 for i in grades:
