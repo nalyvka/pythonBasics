@@ -13,6 +13,23 @@ def avGrades(x,y):
     for i in range(0, x, 1):
         bucket = bucket + y[i]
     return bucket
+def lowHigh(x):
+    lowVal = 100
+    highVal = 0
+    for i in x:
+        if i < lowVal:
+            lowVal = i
+        if i > highVal:
+            highVal = i
+    return lowVal, highVal
 numGrades = 2
 iG = inputGrades(numGrades)
 pG = printGrades(numGrades, iG)
+aG = avGrades(numGrades, iG)
+low, high = lowHigh(iG)
+average = aG / numGrades
+print('Your Sum Is: ', aG)
+print('Your Average Is: ', average)
+print('Your Highest Grade Is: ', high)
+print('Your Lowest Grade Is: ', low)
+
