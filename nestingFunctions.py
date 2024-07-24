@@ -3,16 +3,11 @@ def inputGrades(x):
     for i in range(0, x, 1):
         prompt = input('Please Enter Your Grades: ')
         grades.append(prompt)
+        print(grades[i])
         return grades
-    def printGrades(y):
-        for i in range(0, x)
-    pG = printGrades(grades)
+
 numGrades = 5
 iG = inputGrades(numGrades)
 
 
 
-
-def avGrades():
-def highLow():
-def bubbleSort():
