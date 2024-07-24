@@ -5,9 +5,7 @@ def inputGrades(x):
         grades.append(prompt)
         print(grades[i])
         return grades
-
+def avGrades(x):
+    
 numGrades = 5
 iG = inputGrades(numGrades)
-
-
-
