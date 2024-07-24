@@ -1,15 +1,18 @@
-bucket = 0
 def inputGrades(x):
     grades = []
     for i in range(0, x, 1):
         prompt = float(input('Please Enter Your Grades: '))
         grades.append(prompt)
     return grades
-def avGrades(x, y):
+def printGrades(x, y):
     for i in range(0, x, 1):
-        bucket = bucket + grades[i]
+        print(y[i])
+    return y
+def avGrades(x,y):
+    bucket = 0
+    for i in range(0, x, 1):
+        bucket = bucket + y[i]
     return bucket
-
-numGrades = 5
+numGrades = 2
 iG = inputGrades(numGrades)
-print('Your Grades Are: ', iG)
+pG = printGrades(numGrades, iG)
