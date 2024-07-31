@@ -9,15 +9,20 @@ class Rectangle:
     def area(self):
         self.area = self.length * self.width
         return self.area
+    def diagonal(self):
+        self.diagonal = (self.width**2 + self.length**2)**(1/2)
+        return self.diagonal
 rect1=Rectangle('blue', 3, 6)
 rect2=Rectangle('yellow', 6, 9)
 print('rect1 length = ',rect1.length)
 print('rect1 width = ', rect1.width)
 print('rect1 area =', rect1.area())
 print('rect1 perimeter = ',rect1.perimeter())
+print('rect1 diagonal = ', rect1.diagonal())
 print('rect1 colour = ',rect1.colour)
 print('rect2 length = ', rect2.length)
 print('rect2 width = ', rect2.width)
 print('rect2 area = ', rect2.area())
 print('rect2 perimeter = ',rect2.perimeter())
+print('rect2 diagonal = ',rect2.diagonal())
 print('rect2 colour = ', rect2.colour)
