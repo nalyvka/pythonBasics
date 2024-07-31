@@ -12,6 +12,10 @@ class Rectangle:
     def diagonal(self):
         self.diagonal = (self.width**2 + self.length**2)**(1/2)
         return self.diagonal
+    def volume(self, h):
+        self.height = h
+        self.volume=self.length*self.width*self.height
+        return(self.volume)
 rect1=Rectangle('blue', 3, 6)
 rect2=Rectangle('yellow', 6, 9)
 print('rect1 length = ',rect1.length)
@@ -26,3 +30,9 @@ print('rect2 area = ', rect2.area())
 print('rect2 perimeter = ',rect2.perimeter())
 print('rect2 diagonal = ',rect2.diagonal())
 print('rect2 colour = ', rect2.colour)
+
+vol1 = rect1.volume(1)
+vol2 = rect2.volume(3)
+
+print('rect1 volume = ',vol1)
+print('rect2 volume = ',vol2)
