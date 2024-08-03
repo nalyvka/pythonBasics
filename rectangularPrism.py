@@ -32,8 +32,8 @@ print('prism2 perimeter = ',prism2.perimeter())
 print('prism2 diagonal = ',prism2.diagonal())
 print('prism2 colour = ', prism2.colour)
 
-vol1 = rect1.volume(1)
-vol2 = rect2.volume(3)
+vol1 = prism1.volume(1)
+vol2 = prism2.volume(3)
 
-print('rect1 volume = ',vol1)
-print('rect2 volume = ',vol2)
+print('prism1 volume = ',vol1)
+print('prism2 volume = ',vol2)
