@@ -1,4 +1,4 @@
-class Rectangle:
+class RectangularPrism:
     def __init__(self, c, l, w):
         self.colour=c
         self.length=l
@@ -16,14 +16,15 @@ class Rectangle:
         self.height = h
         self.volume=self.length*self.width*self.height
         return(self.volume)
-rect1=Rectangle('blue', 3, 6)
-rect2=Rectangle('yellow', 6, 9)
+prism1=RectangularPrism('blue', 3, 6)
+prism2=RectangularPrism('yellow', 6, 9)
 print('rect1 length = ',rect1.length)
 print('rect1 width = ', rect1.width)
 print('rect1 area =', rect1.area())
 print('rect1 perimeter = ',rect1.perimeter())
 print('rect1 diagonal = ', rect1.diagonal())
 print('rect1 colour = ',rect1.colour)
+
 print('rect2 length = ', rect2.length)
 print('rect2 width = ', rect2.width)
 print('rect2 area = ', rect2.area())
