@@ -10,6 +10,7 @@ class Students:
             prompt = float(input('Please Enter Grade: '))
             self.grades.append(prompt)
         return self.grades
+    
     def printGrades(self):
         print(self.first, self.last, "'s", 'Grades Are: ')
         print('')
@@ -25,6 +26,10 @@ class Students:
                 lowVal = i
             if i > highVal:
                 highVal = i
+        print(self.first, self.last, "'s", 'High Value Is: ')
+        print(highVal)
+        print(self.first, self.last, "'s", 'Low Value Is: ')
+        print(lowVal)
 
 #objects
 student = Students('John', 'Dee')
@@ -36,3 +41,6 @@ numG1 = student1.insert(3)
 
 test = student.printGrades()
 test1 = student1.printGrades()
+
+student.lowHigh()
+student1.lowHigh()
