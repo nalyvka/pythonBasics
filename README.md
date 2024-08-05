@@ -1,4 +1,4 @@
-Practice to brush up on my Python skills, so I can work on more advanced repos'; it's also a collaboration effort with my dear friend Tanya from Rublyovka..
+Practice to brush up on my Python skills and learn the git workflow (with atomic commits), so I can work on more advanced repos'; it's also a collaboration effort with my dear friend Tanya from Rublyovka..
 
 Will continue up to, and including, simple threading files and applications🧵
 
