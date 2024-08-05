@@ -11,7 +11,7 @@ class Students:
             self.grades.append(prompt)
         return self.grades
     
-    def printGrades(self):
+    def printG(self):
         print(self.first, self.last, "'s", 'Grades Are: ')
         print('')
         for i in range(0, self.ng, 1):
@@ -26,10 +26,13 @@ class Students:
                 lowVal = i
             if i > highVal:
                 highVal = i
-        print(self.first, self.last, "'s", 'High Value Is: ')
-        print(highVal)
-        print(self.first, self.last, "'s", 'Low Value Is: ')
-        print(lowVal)
+        return lowVal, highVal
+    def avg(self):
+        bucket = 0
+        for i in range(0, self.ng, 1):
+            bucket = bucket + self.grades[i]
+        average = bucket / self.ng
+        return average
 
 #objects
 student = Students('John', 'Dee')
@@ -39,8 +42,18 @@ student1 = Students('Emil', 'Cioran')
 numG = student.insert(2)
 numG1 = student1.insert(3)
 
-test = student.printGrades()
-test1 = student1.printGrades()
+student.printG()
+student1.printG()
 
-student.lowHigh()
-student1.lowHigh()
+low, high = student.lowHigh()
+print(student.first, student.last, "'s", 'Highest Grade: ', high)
+print(student.first, student.last, "'s", 'Lowest Grade: ', low)
+average = student.avg()
+print(student.first, student.last, 'Has An Average Of ', average)
+
+low1, high1 = student1.lowHigh()
+print(student1.first, student1.last, "'s", 'Highest Grade: ', high)
+print(student1.first, student1.last, "'s", 'Lowest Grade: ', low)
+average1 = student1.avg()
+print(student1.first, student1.last, 'Has An Average Of ', average1)
+
