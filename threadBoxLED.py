@@ -1,25 +1,27 @@
 from threading import Thread
 from time import *
 
-def box():
+def box(delayTime):
     while True:
         print('---------Box Is Open')
-        sleep(3)
+        sleep(delayTime)
         print('---------Box Is Closed')
-        sleep(3)
+        sleep(delayTime)
 
 
-def LED():
+def LED(delayTime):
     while True:
         print('LED Is On')
-        sleep(1)
+        sleep(delayTime)
         print('LED Is Off')
-        sleep(1)
+        sleep(delayTime)
 
-#creating threads
-boxThread = Thread(target=box)
-LED_Thread = Thread(target=LED)
+#arguments to pass to the functions
+delay_box = 3
+delayLED = 1
 
+boxThread = Thread(target=box, args=(delay_box,))
+LED_Thread = Thread(target=LED, args=(delayLED,))
 
 #??? - don't quite understand this yet
 boxThread.daemon=True
