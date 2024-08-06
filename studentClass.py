@@ -11,7 +11,7 @@ class Students:
             self.grades.append(prompt)
         return self.grades
     
-    def printG(self):
+    def printGrades(self):
         print(self.first, self.last, "'s", 'Grades Are: ')
         print('')
         for i in range(0, self.ng, 1):
@@ -27,6 +27,7 @@ class Students:
             if i > highVal:
                 highVal = i
         return lowVal, highVal
+    
     def avg(self):
         bucket = 0
         for i in range(0, self.ng, 1):
@@ -49,12 +50,13 @@ class Students:
 student = Students('John', 'Dee')
 student1 = Students('Emil', 'Cioran')
 
-#specify the # of grades for each student
 numG = student.insert(2)
 numG1 = student1.insert(3)
 
-student.printG()
-student1.printG()
+
+student.printGrades()
+student1.printGrades()
+
 
 low, high = student.lowHigh()
 print(student.first, student.last, "'s", 'Highest Grade: ', high)
