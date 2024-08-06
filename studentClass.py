@@ -33,6 +33,17 @@ class Students:
             bucket = bucket + self.grades[i]
         average = bucket / self.ng
         return average
+    
+    def bubbleSort(self):
+        swapper = 0
+        self.bub = self.grades
+        for i in range(0, self.ng-1, 1):
+            for i in range(0, self.ng-1, 1):
+                if self.bub[i] < self.bub[i+1]:
+                    swapper = self.bub[i]
+                    self.bub[i] = self.bub[i+1]
+                    self.bub[i+1] = swapper
+        return self.bub
 
 #objects
 student = Students('John', 'Dee')
@@ -50,10 +61,15 @@ print(student.first, student.last, "'s", 'Highest Grade: ', high)
 print(student.first, student.last, "'s", 'Lowest Grade: ', low)
 average = student.avg()
 print(student.first, student.last, 'Has An Average Of ', average)
+sortedGrades = student.bubbleSort()
+print(student.first, student.last, "'s", 'Sorted Grades Are ', sortedGrades)
+
+print('')
 
 low1, high1 = student1.lowHigh()
 print(student1.first, student1.last, "'s", 'Highest Grade: ', high)
 print(student1.first, student1.last, "'s", 'Lowest Grade: ', low)
 average1 = student1.avg()
 print(student1.first, student1.last, 'Has An Average Of ', average1)
-
+sortedGrades1 = student1.bubbleSort()
+print(student1.first, student1.last, "'s", 'Sorted Grades Are ', sortedGrades1)
