@@ -7,4 +7,4 @@ This repository will consist of a compilation of Python-related tasks and readin
 
 - ## Contributing
 
-If you have suggestions for applications e.g., basic malware scripts and/or tasks with the UNO-R3 using threads (and what not) or even resource links and projects you would like to put in here, please contact me at my email nalyvka@pm.me, discord (nalyvka), raise issues, or post comments in the idea forum for this repository. Support me by starring this repo and providing ideas in the forumn discussion and/or forking this repo and adding on to it, making a pull request for my review
+If you have suggestions for applications e.g., basic malware scripts and/or tasks with the UNO-R3 using threads (and what not) or even resource links and projects you would like to put in here, please contact me at my email nalyvka@pm.me, discord (nalyvka), raise issues, or post comments in the idea forum for this repository. Support me by starring this repo and providing ideas in the forumn discussion
