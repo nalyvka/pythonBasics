@@ -1,4 +1,4 @@
-# pythonBasics (work in progress -- I'm writing the solutions for the the tasks/assignments)
+# pythonBasics (work in progress)
 
 This repository will consist of a compilation of Python-related tasks and readings to develop a foundation with the language; allowing you to use OOP concepts in conjuntion with various libraries to create projects that will allow you to hook up an ELEGOO Arduino R3 and create visual simulations of inputted data from the device; circuit diagrams and instructions on the hardware side will be provided
 
